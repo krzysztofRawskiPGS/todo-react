@@ -2,7 +2,13 @@
 * {
   box-sizing: border-box;
 }
-/**:focus {outline:none !important}*/
+
+:root {
+  --color-primary: #2980b9;
+  --color-secondary: #6dd5fa;
+  --color-bg: #eeeeee;
+  --color-error: #da4453;
+}
 
 html,
 body,
@@ -119,20 +125,20 @@ header {
 h1 {
   font-weight: 900;
   font-size: 3rem;
-  background-image: linear-gradient(45deg, #6dd5fa, #2980b9);
+  background-image: linear-gradient(45deg, var(--color-secondary), var(--color-primary));
   /*background: -webkit-linear-gradient(to right, #da4453, #89216b);*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 main {
-  background-color: #eeeeee;
+  background-color: var(--color-bg);
   min-height: calc(100vh - 100px);
 }
 .btn {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   border: none;
-  background-color: #2980b9;
+  background-color: var(--color-primary);
   cursor: pointer;
   transition: 0.1s;
   color: white;

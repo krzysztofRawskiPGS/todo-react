@@ -8,5 +8,5 @@
     background-color: white;
 }
 .delete:global(.btn) {
-    background-color: #da4453;
+    background-color: var(--color-error);
 }
